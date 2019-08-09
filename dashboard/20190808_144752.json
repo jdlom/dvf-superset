@@ -1,0 +1,4057 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "created_by_fk": 1,
+                "json_metadata": "{\"filter_immune_slices\": [], \"timed_refresh_immune_slices\": [], \"filter_immune_slice_fields\": {}, \"expanded_slices\": {}, \"default_filters\": \"{}\", \"remote_id\": 1}",
+                "description": null,
+                "dashboard_title": "D\u00e9monstration",
+                "changed_on": {
+                    "__datetime__": "2019-08-08T14:28:38"
+                },
+                "created_on": {
+                    "__datetime__": "2019-08-08T14:26:07"
+                },
+                "changed_by_fk": 1,
+                "slug": "dvf",
+                "css": "",
+                "position_json": "{\"CHART-7276ABDcws\":{\"children\":[],\"id\":\"CHART-7276ABDcws\",\"meta\":{\"chartId\":1,\"height\":50,\"sliceName\":\"Prix median\",\"width\":4},\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-ncFfF_kdSM\"],\"id\":\"GRID_ID\",\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"D\\u00e9monstration\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-ncFfF_kdSM\":{\"children\":[\"CHART-7276ABDcws\"],\"id\":\"ROW-ncFfF_kdSM\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"}}",
+                "id": 1,
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "viz_type": "bar",
+                            "datasource_type": "table",
+                            "slice_name": "Prix median",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T14:47:52"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"1__table\", \"viz_type\": \"bar\", \"url_params\": {}, \"granularity_sqla\": \"datemut\", \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"metrics\": [\"mediane_valeur_fonc\"], \"adhoc_filters\": [], \"groupby\": [], \"timeseries_limit_metric\": null, \"order_desc\": true, \"contribution\": false, \"row_limit\": 10000, \"color_scheme\": \"bnbColors\", \"show_brush\": \"auto\", \"show_legend\": true, \"show_bar_value\": false, \"rich_tooltip\": true, \"bar_stacked\": false, \"line_interpolation\": \"linear\", \"show_controls\": false, \"bottom_margin\": \"auto\", \"x_axis_label\": \"\", \"x_ticks_layout\": \"auto\", \"x_axis_format\": \"smart_date\", \"x_axis_showminmax\": false, \"reduce_x_ticks\": false, \"y_axis_label\": \"\", \"left_margin\": \"auto\", \"y_axis_showminmax\": false, \"y_log_scale\": false, \"y_axis_format\": \".3s\", \"y_axis_bounds\": [null, null], \"rolling_type\": \"None\", \"comparison_type\": \"values\", \"resample_how\": null, \"resample_rule\": null, \"resample_fillmethod\": null, \"annotation_layers\": [], \"remote_id\": 1, \"datasource_name\": \"dvf.mutation\", \"schema\": \"dvf.mutation\", \"database_name\": \"dvf\"}",
+                            "datasource_name": "dvf.mutation",
+                            "datasource_id": 1,
+                            "id": 1,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:40:33"
+                            },
+                            "changed_by_fk": 1,
+                            "perm": "[dvf].[mutation](id:1)",
+                            "description": null
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "filter_select_enabled": false,
+                "fetch_values_predicate": "",
+                "offset": 0,
+                "user_id": null,
+                "cache_timeout": null,
+                "created_on": {
+                    "__datetime__": "2019-08-08T13:14:02"
+                },
+                "schema": "dvf",
+                "params": "{\"remote_id\": 1, \"database_name\": \"dvf\"}",
+                "changed_on": {
+                    "__datetime__": "2019-08-08T13:30:33"
+                },
+                "sql": "",
+                "perm": "[dvf].[mutation](id:1)",
+                "id": 1,
+                "is_sqllab_view": false,
+                "table_name": "mutation",
+                "description": "",
+                "template_params": "",
+                "main_dttm_col": "datemut",
+                "default_endpoint": "",
+                "created_by_fk": 1,
+                "database_id": 2,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database": {
+                    "__Database__": {
+                        "allow_dml": false,
+                        "password": "superset",
+                        "force_ctas_schema": "",
+                        "cache_timeout": null,
+                        "allow_multi_schema_metadata_fetch": false,
+                        "created_on": {
+                            "__datetime__": "2019-08-08T13:13:07"
+                        },
+                        "select_as_create_table_as": false,
+                        "changed_on": {
+                            "__datetime__": "2019-08-08T13:13:07"
+                        },
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {},\r\n    \"metadata_cache_timeout\": {},\r\n    \"schemas_allowed_for_csv_upload\": []\r\n}\r\n",
+                        "expose_in_sqllab": false,
+                        "perm": "[dvf].(id:2)",
+                        "id": 2,
+                        "allow_run_sync": true,
+                        "verbose_name": null,
+                        "impersonate_user": false,
+                        "allow_run_async": false,
+                        "database_name": "dvf",
+                        "created_by_fk": 1,
+                        "allow_csv_upload": false,
+                        "sqlalchemy_uri": "postgresql+psycopg2://superset:XXXXXXXXXX@postgres/superset",
+                        "changed_by_fk": 1,
+                        "allow_ctas": false
+                    }
+                },
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 1,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(idmutation)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__idmutation",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 2,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(idmutation)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__idmutation",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 3,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(idnatmut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__idnatmut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 4,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(idnatmut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__idnatmut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 5,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(anneemut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__anneemut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 6,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(anneemut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__anneemut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 7,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(moismut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__moismut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 8,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(moismut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__moismut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 9,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbartcgi)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbartcgi",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 10,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbartcgi)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbartcgi",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 11,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(valeurfonc)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__valeurfonc",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 12,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(valeurfonc)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__valeurfonc",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 13,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbdispo)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbdispo",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 14,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbdispo)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbdispo",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 15,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nblot)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nblot",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 16,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nblot)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nblot",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 17,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbcomm)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbcomm",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 18,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbcomm)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbcomm",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 19,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbsection)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbsection",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 20,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbsection)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbsection",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 21,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbpar)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbpar",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 22,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbpar)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbpar",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 23,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbparmut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbparmut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 24,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbparmut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbparmut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 25,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbsuf)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbsuf",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 26,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbsuf)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbsuf",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 27,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sterr)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sterr",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 28,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sterr)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sterr",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 29,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(l_dcnt)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__l_dcnt",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 30,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(l_dcnt)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__l_dcnt",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 31,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbvolmut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbvolmut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 32,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbvolmut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbvolmut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 33,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nblocmut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nblocmut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 34,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nblocmut)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nblocmut",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 35,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nblocmai)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nblocmai",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 36,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nblocmai)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nblocmai",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 37,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nblocapt)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nblocapt",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 38,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nblocapt)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nblocapt",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 39,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nblocdep)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nblocdep",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 40,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nblocdep)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nblocdep",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 41,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nblocact)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nblocact",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 42,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nblocact)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nblocact",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 43,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbapt1pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbapt1pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 44,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbapt1pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbapt1pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 45,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbapt2pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbapt2pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 46,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbapt2pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbapt2pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 47,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbapt3pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbapt3pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 48,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbapt3pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbapt3pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 49,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbapt4pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbapt4pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 50,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbapt4pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbapt4pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 51,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbapt5pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbapt5pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 52,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbapt5pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbapt5pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 53,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbmai1pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbmai1pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 54,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbmai1pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbmai1pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 55,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbmai2pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbmai2pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 56,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbmai2pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbmai2pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 57,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbmai3pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbmai3pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 58,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbmai3pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbmai3pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 59,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbmai4pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbmai4pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 60,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbmai4pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbmai4pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 61,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(nbmai5pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__nbmai5pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 62,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(nbmai5pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__nbmai5pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 63,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sbati)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sbati",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 64,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sbati)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sbati",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 65,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sbatmai)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sbatmai",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 66,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sbatmai)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sbatmai",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 67,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sbatapt)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sbatapt",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 68,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sbatapt)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sbatapt",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 69,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sbatact)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sbatact",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 70,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sbatact)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sbatact",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 71,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sapt1pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sapt1pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 72,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sapt1pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sapt1pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 73,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sapt2pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sapt2pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 74,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sapt2pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sapt2pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 75,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sapt3pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sapt3pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 76,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sapt3pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sapt3pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 77,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sapt4pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sapt4pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 78,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sapt4pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sapt4pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 79,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(sapt5pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__sapt5pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 80,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(sapt5pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__sapt5pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 81,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(smai1pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__smai1pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 82,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(smai1pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__smai1pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 83,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(smai2pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__smai2pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 84,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(smai2pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__smai2pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 85,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(smai3pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__smai3pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 86,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(smai3pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__smai3pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 87,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(smai4pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__smai4pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 88,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(smai4pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__smai4pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 89,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "SUM(smai5pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "sum",
+                            "metric_name": "sum__smai5pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": null,
+                            "id": 90,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "AVG(smai5pp)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "avg",
+                            "metric_name": "avg__smai5pp",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": "COUNT(*)",
+                            "id": 91,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "COUNT(*)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": "count",
+                            "metric_name": "count",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": null,
+                            "description": null
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "verbose_name": "Mediane valeur fonc",
+                            "id": 92,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:30:01"
+                            },
+                            "created_by_fk": 1,
+                            "expression": "percentile_disc(0.5) within group (order by valeurfonc)",
+                            "warning_text": "",
+                            "is_restricted": false,
+                            "metric_type": "NUMERIC",
+                            "metric_name": "mediane_valeur_fonc",
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:37:28"
+                            },
+                            "changed_by_fk": 1,
+                            "table_id": 1,
+                            "d3format": "",
+                            "description": "M\u00e9diane de la valeur fonciere"
+                        }
+                    }
+                ],
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 1,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "idmutation",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 2,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "idmutinvar",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR(60)",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 3,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "idopendata",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR(60)",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 4,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "idnatmut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 5,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "codservch",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR(7)",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 6,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "refdoc",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR(10)",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 7,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "datemut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "DATE",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": true,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 8,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "anneemut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 9,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "moismut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 10,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "coddep",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR(3)",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 11,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "libnatmut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR(45)",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 12,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbartcgi",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 13,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "l_artcgi",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR[]",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 14,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "vefa",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "BOOLEAN",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 15,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "valeurfonc",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 16,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbdispo",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 17,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nblot",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 18,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbcomm",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 19,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "l_codinsee",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR[]",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 20,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbsection",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 21,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "l_section",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR[]",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 22,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbpar",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 23,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "l_idpar",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR[]",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 24,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbparmut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 25,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "l_idparmut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR[]",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 26,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbsuf",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 27,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sterr",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 28,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "l_dcnt",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC[]",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 29,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbvolmut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 30,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nblocmut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 31,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "l_idlocmut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR[]",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 32,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nblocmai",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 33,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nblocapt",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 34,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nblocdep",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 35,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nblocact",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 36,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbapt1pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 37,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbapt2pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 38,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbapt3pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 39,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbapt4pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 40,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbapt5pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 41,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbmai1pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 42,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbmai2pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 43,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbmai3pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 44,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbmai4pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 45,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "nbmai5pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "INTEGER",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 46,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sbati",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 47,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sbatmai",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 48,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sbatapt",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 49,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sbatact",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 50,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sapt1pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 51,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sapt2pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 52,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sapt3pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 53,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sapt4pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 54,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "sapt5pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 55,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "smai1pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 56,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "smai2pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 57,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "smai3pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 58,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "smai4pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": true,
+                            "id": 59,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "smai5pp",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "NUMERIC",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 60,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "geomlocmut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "UNKNOWN",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 61,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "geomparmut",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "UNKNOWN",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 62,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "geompar",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "UNKNOWN",
+                            "table_id": 1,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 63,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "codtypbien",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "VARCHAR(6)",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "avg": false,
+                            "id": 64,
+                            "python_date_format": "",
+                            "max": false,
+                            "column_name": "libtypbien",
+                            "database_expression": "",
+                            "min": false,
+                            "verbose_name": "",
+                            "created_by_fk": 1,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": "",
+                            "created_on": {
+                                "__datetime__": "2019-08-08T13:14:02"
+                            },
+                            "type": "TEXT",
+                            "table_id": 1,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-08-08T13:54:31"
+                            },
+                            "expression": "",
+                            "sum": false
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
