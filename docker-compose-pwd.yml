@@ -23,7 +23,7 @@ services:
     entrypoint: >
       ash -c "wget -P /docker-entrypoint-initdb.d https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/docker-entrypoint-initdb.d/00_initdb-postgis.sh  &&
               wget -P /docker-entrypoint-initdb.d https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/docker-entrypoint-initdb.d/superset.sql.gz &&
-              /docker-entrypoint.sh"
+              /entrypoint.sh"
   superset:
     image: amancevice/superset
     restart: always
@@ -41,7 +41,7 @@ services:
     #   - ./superset_config.py:/etc/superset/superset_config.py
     entrypoint: >
       bash -c "wget https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/superset_config.py &&
-             gunicorn supperset:app.py"
+             gunicorn superset:app.py"
   pgadmin:
     image: dpage/pgadmin4
     restart: always
