@@ -21,8 +21,8 @@ services:
       - mypgdata:/var/lib/postgresql/data
       - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
     entrypoint: >
-      ash -c "wget -N -P /docker-entrypoint-initdb.d https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/00_initdb-postgis.sh  &&
-              wget -N -P /docker-entrypoint-initdb.d https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/superset.sql.gz &&
+      ash -c "wget -N -P /docker-entrypoint-initdb.d https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/docker-entrypoint-initdb.d/00_initdb-postgis.sh  &&
+              wget -N -P /docker-entrypoint-initdb.d https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/docker-entrypoint-initdb.d/superset.sql.gz &&
               /docker-entrypoint.sh"
   superset:
     image: amancevice/superset
