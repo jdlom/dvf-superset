@@ -19,7 +19,7 @@ services:
       POSTGRES_PASSWORD: superset
     volumes:
       - mypgdata:/var/lib/postgresql/data
-      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      # - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
     entrypoint: >
       ash -c "wget -N -P /docker-entrypoint-initdb.d https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/docker-entrypoint-initdb.d/00_initdb-postgis.sh  &&
               wget -N -P /docker-entrypoint-initdb.d https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/docker-entrypoint-initdb.d/superset.sql.gz &&
@@ -37,8 +37,8 @@ services:
       POSTGRES_PASSWORD: superset
     ports:
       - "8088:8088"
-    volumes:
-      - ./superset_config.py:/etc/superset/superset_config.py
+    # volumes:
+    #   - ./superset_config.py:/etc/superset/superset_config.py
     entrypoint: >
       bash -c "wget https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/superset_config.py &&
              gunicorn supperset:app.py"
