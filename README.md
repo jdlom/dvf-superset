@@ -7,6 +7,9 @@ Cette image est composée des services suivants :
 * postgres
 * pgadmin
 
+### Play with docker
+[![Try in PWD](https://cdn.rawgit.com/play-with-docker/stacks/cff22438/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/docker-compose-pwd.yml)
+
 ### Cloner le répertoire git
 ```bash
 git clone https://framagit.org/lejedi76/dvf-superset.git
