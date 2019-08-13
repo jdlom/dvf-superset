@@ -40,7 +40,7 @@ services:
     # volumes:
     #   - ./superset_config.py:/etc/superset/superset_config.py
     entrypoint: >
-      bash -c "wget https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/superset_config.py &&
+      bash -c "wget -P /etc/superset/ https://raw.githubusercontent.com/lejedi76/dvf-superset/test_import_superset_conf/superset_config.py &&
              gunicorn superset:app.py"
   pgadmin:
     image: dpage/pgadmin4
